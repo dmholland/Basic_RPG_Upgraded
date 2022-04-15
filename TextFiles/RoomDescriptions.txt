@@ -1,0 +1,64 @@
+Room: The Ruins of a Shattered Castle
+Number: 1
+Desc: You stand in the ruins of a shattered castle.
+Desc: All around you lies rubble. You can see
+Desc: what used to be a very large entry way to the earth.
+Desc: To the south lies A Peaceful Glen.
+Exit: South 2
+Exit: North 6
+Room: A Peaceful Glen
+Number: 2
+Desc: This peaceful glen is peaceful.
+Desc: The chirping of birds and fish splattering
+Desc: the water can be heard as you walk
+Desc: the shoreline.
+Exit: North 1
+Exit: West 3
+Room: Entrance to a Drow Mine
+Number: 3
+Desc: The gently sloping plain rises sharply here as a hill rises to the west.
+Desc: There is a mine shaft west of you with a clearly defined pathway leading
+Desc: up and inside.
+Desc: You can't see inside
+Exit: East 2
+Exit: West 4
+Room: Inside the Drow Mine
+Number: 4
+Desc: The walls have been carved by hand tools
+Desc: There is evidence of something recently traveled these caverns.
+Desc: The sounds of the mine are unnerving.
+Desc: Tools and broken equipment. A head is a deep hole
+Exit: North 5
+Exit: East 3
+Room: Goblin Cave
+Number: 5
+Desc: Remains of Goblins litter the ground
+Desc: Inhuman breathing can be heard from a distance.
+Desc: Its best not to terry here.
+Desc: To the west a small light shines. And smell of water.
+Exit: West 6
+Exit: South 4
+Room: Dark Lake
+Number: 6
+Desc: You flee from uncertain danger to a lake. If not for the smell of rotting fish this
+Desc: would be a great place to rest. Light from
+Desc: above can be seen and it shows this to be an
+Desc: ancient crater. To the north lies The Old Quarry.
+Exit: East 5
+Exit: North 7
+Room: The Old Quarry
+Number: 7
+Desc: The realm of the dwarves. Far from reach of man.
+Desc: Monsters are nowhere to be seen as automations patrol.
+Desc: Its difficult not to be caught by them. To the north
+Desc: lies the basement of the castle, The Catacombs.
+Exit: South 6
+Exit: North 8
+Room: The Catacombs
+Number: 8
+Desc: The entrance seemed to be locked from your side, suggesting the dwarves used it
+Desc: as a barrier. Mountains of bodies are here, but all decayed with thousands of years
+Desc: of decadence. Claw marks, molten stone, and charred remains point to an ancient battle.
+Desc: As the surface entrance has immovable boulders blocking, you realize you have made a mistake.
+Exit: South 7
+Exit: East 1
