@@ -1,2 +1,4 @@
-package NPC;public class Warlock {
+package NPC;
+
+public class Warlock {
 }

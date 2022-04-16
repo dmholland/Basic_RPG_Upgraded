@@ -20,7 +20,7 @@ public class Monster_Thread {
                     while (true){
                         //System.out.println("Something Happens");
                         populateGame();
-                        Thread.sleep(1000);
+                        Thread.sleep(10000);
 
                         //System.out.println("Something Happens Again");
                     }

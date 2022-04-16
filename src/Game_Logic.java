@@ -13,59 +13,51 @@ public class Game_Logic {
     public Game_Logic(){
 
         Game_Objects.room.add(new Room(0));
-        List<String> roomInfo = new ArrayList<>();
-        try{
-            roomInfo = readLines("C:\\Users\\kenos\\IdeaProjects\\Basic_RPG\\TextFiles\\RoomDescriptions.txt");
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-
-
-        for(int i=0;i<roomInfo.size();i++) {
-            String[] firstWord= roomInfo.get(i).split(" ");//splits first word from buffered reader (Room/Number/Desc/Exit) in a line
-            String[] everythingElse= roomInfo.get(i).split(":");// splits the other stuff from the semicolon
-
-            if(firstWord[0].equals("Room:")){//Reads a line where Room: is the first value
-                int currentRoomSize = Game_Objects.room.size();
-                Game_Objects.room.add(new Room(currentRoomSize)); //adds a new room
-                Game_Objects.room.get(Game_Objects.room.size()-1).name = everythingElse[1]; //gives it a name
-                Game_Objects.room.get(Game_Objects.room.size() -1).number = currentRoomSize;//updates room size
-
-                int roomcount =0;
-                for(int z =0; z< roomInfo.size();z++){//first loop counts rooms
-                    String[] nextFirstWord = roomInfo.get(z).split(" ");
-                    if(nextFirstWord[0].equals("Room:")){
-                        roomcount++;
-                    }
-                    if(roomcount==currentRoomSize){
-                        if(nextFirstWord[0].equals("Desc:")){
-                            String[] nextEverythingElse = roomInfo.get(z).split(":");
-                            Game_Objects.room.get(Game_Objects.room.size()-1).desc.add(nextEverythingElse[1]);
-                        }
-                    }
-                }
-                roomcount =0;
-                for(int z =0; z< roomInfo.size();z++){
-                    String[] nextFirstWord= roomInfo.get(z).split(" ");
-                    if(nextFirstWord[0].equals("Room:")){
-                        roomcount++;
-                    }
-                    if(roomcount == currentRoomSize){
-                        if(nextFirstWord[0].equals("Exit:")){
-                            String[] nextEverthingElse = roomInfo.get(z).split(":");
-                            Game_Objects.room.get(Game_Objects.room.size()-1).exits.add(nextEverthingElse[1]);
-                        }
-                    }
-                }
-            }
-        }
-
+        createRoomlisting("C:\\Users\\kenos\\IdeaProjects\\Basic_RPG_Upgraded\\TextFiles\\RoomDescriptions.txt");
+        createRmMapping(Game_Objects.room);
     }
 
 
+   public void createRmMapping(List<Room> listing){
+       for (Room rm:listing){
+           Game_Objects.roomHashMap.put(rm.getNumber(),rm);
+       }
+   }
+public void createRoomlisting(String file){
+    List<String> roomInfo = new ArrayList<>();
+    try{
+        roomInfo = readLines(file);
+    }catch(IOException e){
+        e.printStackTrace();
+    }
 
+    int currentRm=0;
+    for(int i=0;i<roomInfo.size();i++) {
+        String[] firstWord= roomInfo.get(i).split(" ");//splits first word from buffered reader (Room/Number/Desc/Exit) in a line
+        String[] everythingElse= roomInfo.get(i).split(":");// splits the other stuff from the semicolon
 
+        if(firstWord[0].equals("Number:")) {//Reads a line where Room: is the first value
+            Game_Objects.room.add(new Room(Integer.parseInt(firstWord[1]))); //adds a new room
+            currentRm++;
+            continue;
+        }
 
+        if(firstWord[0].equals("Room:")){
+            Game_Objects.room.get(currentRm-1).name = everythingElse[1]; //gives it a name
+            continue;
+        }
+        if(firstWord[0].equals("Desc:")) {
+            Game_Objects.room.get(currentRm-1).desc.add(everythingElse[1]);
+           continue;
+        }
+        if(firstWord[0].equals("Exit:")) {
+            //String everythingElse2[]=everythingElse[1].split(" ");
+            Game_Objects.room.get(currentRm-1).exits.add(firstWord[1]);
+            Game_Objects.room.get(currentRm-1).connectedRm.add(Integer.parseInt(firstWord[2]));
+        }
+
+        }
+    }
 
 
     public List<String> readLines(String filename) throws IOException{
@@ -243,6 +235,20 @@ System.out.println("You summon a "+ Game_Objects.room.get(y).npc
             }
         }
     }
+//    public void presentChoices(){
+//        Room currentRm=Game_Objects.player.inRoom;
+//    }
+//
+//    public void changeRoom(Room currentRm,Room destination){
+//
+//
+//    }
+//
+//    public boolean checkRmConnected(Room currentRm,Room destination){
+//        return currentRm.connectedRm.contains(destination.number);
+//    }
+
+
     public void move(String[] x){
         if(x.length ==1) {
             System.out.println("Move Where?");

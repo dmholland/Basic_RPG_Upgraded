@@ -8,6 +8,7 @@ import NPC.Skeleton;
 
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Game_Objects {
@@ -18,6 +19,7 @@ public class Game_Objects {
     static List<Object> ItemDataBase = new ArrayList<Object>();
     static List<Object> allNPCs =new ArrayList<Object>();
     static Combat combat =new Combat();
+    static HashMap<Integer,Room> roomHashMap=new HashMap<>();
 
     public static void initializeNPCArray(){
         NPCDataBase.add(new NPC());

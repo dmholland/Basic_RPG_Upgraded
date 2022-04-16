@@ -1,2 +1,4 @@
-package NPC;public class Bandit {
+package NPC;
+
+public class Bandit {
 }

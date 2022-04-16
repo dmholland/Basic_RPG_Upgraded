@@ -1,2 +1,4 @@
-package NPC;public class Heretic_Priest {
+package NPC;
+
+public class Heretic_Priest {
 }

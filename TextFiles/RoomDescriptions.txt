@@ -1,64 +1,191 @@
-Room: The Ruins of a Shattered Castle
+
 Number: 1
-Desc: You stand in the ruins of a shattered castle.
-Desc: All around you lies rubble. You can see
-Desc: what used to be a very large entry way to the earth.
-Desc: To the south lies A Peaceful Glen.
+Room: The Ruins of a Shattered Castle
+Desc: You stand in the ruins of a shattered castle, that is old and familiar. The seat of your family line.
+Desc: All around you lies rubble, that is too big to carry, and too hard for any tool to break. A great peace always
+Desc: calms you as no monster dare come here. This place has been a haven for centuries when th village was raided by
+Desc: armies or bandits. To the south is a peaceful glen. Down lies  the castle basement, sealed by your ancestor years ago.
 Exit: South 2
-Exit: North 6
-Room: A Peaceful Glen
+Exit: Down 23
 Number: 2
+Room: A Peaceful Glen
 Desc: This peaceful glen is peaceful.
 Desc: The chirping of birds and fish splattering
 Desc: the water can be heard as you walk
-Desc: the shoreline.
+Desc: the shoreline. From here the castle is to the north and to the west is the old drow mine.
 Exit: North 1
 Exit: West 3
-Room: Entrance to a Drow Mine
 Number: 3
+Room: Entrance to a Drow Mine
 Desc: The gently sloping plain rises sharply here as a hill rises to the west.
 Desc: There is a mine shaft west of you with a clearly defined pathway leading
 Desc: up and inside.
-Desc: You can't see inside
+Desc: You can't see inside. Behind you is the peaceful glen.
 Exit: East 2
 Exit: West 4
-Room: Inside the Drow Mine
 Number: 4
+Room: Inside the Drow Mine
 Desc: The walls have been carved by hand tools
 Desc: There is evidence of something recently traveled these caverns.
 Desc: The sounds of the mine are unnerving.
-Desc: Tools and broken equipment. A head is a deep hole
-Exit: North 5
-Exit: East 3
-Room: Goblin Cave
-Number: 5
-Desc: Remains of Goblins litter the ground
-Desc: Inhuman breathing can be heard from a distance.
-Desc: Its best not to terry here.
-Desc: To the west a small light shines. And smell of water.
-Exit: West 6
-Exit: South 4
-Room: Dark Lake
-Number: 6
-Desc: You flee from uncertain danger to a lake. If not for the smell of rotting fish this
-Desc: would be a great place to rest. Light from
-Desc: above can be seen and it shows this to be an
-Desc: ancient crater. To the north lies The Old Quarry.
-Exit: East 5
+Desc: Tools and broken equipment. To the east lies the mine entrance, to the north lies a dark whole, to the south lies a tunnel
 Exit: North 7
-Room: The Old Quarry
+Exit: East 3
+Exit: South 5
+Number: 5
+Room: Unfinished Tunnel
+Desc: Goblins and dwarves actually come from the same bloodline. They mine and build in the darkness. Goblins and dwarves
+Desc: split off over 50 thousand years ago before the age of man. Goblins being much shorter and brownish green, and dwarves
+Desc: being unchanged. Some say it was the Gods of Twilight that blighted them. Here lies an unfinished tunnel. Old tools
+Desc: and carts lay on top of old tract. It's unusual for goblins to not kill or eat intruders that stop them. To the north is a clearing.
+Exit: North 5
+Exit: South 6
+Number: 6
+Room: Buried Gravesite
+Desc: You enter the clearing and see torches lit with unknown methods, with a deep blue ting. You remember your mother
+Desc: telling you about the old kings burying evil men who where executed by the  courts deep in caves.
+Desc: This reminds you of the great knight Ringheld, who was discovered to be killing little boys and taking
+Desc: pleasure with their corpses. Behind you is the Unfinished drown mine tunnel.
+Exit: South 5
 Number: 7
-Desc: The realm of the dwarves. Far from reach of man.
-Desc: Monsters are nowhere to be seen as automations patrol.
-Desc: Its difficult not to be caught by them. To the north
-Desc: lies the basement of the castle, The Catacombs.
+Room: Goblin Cave
+Desc: Remains of Goblins litter the ground, along with their melted swords clutched in their skeletal hands.
+Desc: Inhuman breathing can be heard from a distance. There is little light but few can mistake that sound.
+Desc: Its best not to terry here, goblins are huge hoarders and often prey to more..greedy villains.
+Desc: To the west a small light shines. To the south, the mine lies their silent.
+Exit: West 8
+Exit: South 4
+Number: 8
+Name: Sunshine Hill
+Desc: The evening sun casts down upon you as you can see all much of Sky on this summit. Your village lies far to the west,
+Desc: with is giant white remains of the old castle. Grass and tulips are all around and a gravestone of someone wishing
+Desc: to be buried in the better areas. I can take a breather, what about you?
+Desc: To the east is the destroyed Goblin lair, to the south lies the Dark Lake where the cabolds live, to the west are ruins.
+Exit: South 9
+Exit: East 7
+Exit: West 16
+Number: 9
+Name:  Dark Lake
+Desc: Being hard-headed has led you into danger once again. Places where even dragons don't like going. The trees
+Desc: tower some 20 meters in the air, both ancient and impossible to cut. A piece of fruit from its tree is seen on the
+Desc: ground from afar, crushing a stone before rolling to a halt. You clutched your armor as hisses and laughter are heard
+Desc: From unseen creatures. A store is also seen to the left.
+Exit: Store 15
+Exit: North 8
+Exit: Arena 10
+Number: 10
+Name:  Dark Lake Arena
+Desc: The infamous arena of the cabolds. You watch as axe and claw are used to decide the fate of desperate combatants.
+Desc: Sometimes you hear a shriek followed by a "Don eay!"
+Desc: You wonder how much money is made off of these events as not many would travel to a cabold village to see it.
+Desc: Tall bearded men are sometimes seen leaving the arena lugging their hard-earned belongings behind them.
+Exit: Dark_Lake 9
+Number: 11
+Name:  Dark Lake Arena Pit
+Desc: Teeth and blood litter the area and a roaring crowd watches you with earnest excitement.
+Desc: "Bluuuuuur!" The horn sounds off.
+Desc: A few cat girls blow kisses and flash themselves in spur of the moment excitement.
+Desc: The opposite gate now rises. Let these sex-driven, blood circus begin.
+Exit: Dark_Lake_Arena 10
+Number: 12
+Name:  Dark Lake Girls Home
+Desc: A cabold girl lives simply as most things come easier for her than women of other races, except giants and dragons.
+Desc: She sits on her bed with a look of deadly passion.
+Desc: It's very difficult to judge what she is actually thinking as here cat eyes seem to be eying prey.
+Desc: Hoping her mouth will not be used to gnaw your muscles off, you stand in front of her.
+Exit: Dark_Lake 9
+Number: 13
+Name:  Dark Lake Girls2 Home
+Desc: Some cabold girls are more girl than cabold. This home smells of perfume and waffles. Good, not a predator atleast.
+Desc: You notice from her bending over to drop her mace, she wears no undies.
+Desc: Come to think of it....cabolds probably don't ever where undies. You make a guesture and move your face towards
+Desc: your host for a closer inspection as she is busy organizing the pile of equipment.
+Exit: Dark_Lake 9
+Number: 14
+Name:  DarkLake Girls3 Home
+Desc: The girl takes you to what seems like a butchery. A cannibal in true form!
+Desc: The 5 ft 6 tigress smiles with huge delite as you spin around at all the hanging carcasses hanging from her ceiling.
+Desc: She then asks "I know what it looks like, I was hoping you wouldn't mind me hanging from the ceiling tonight."
+Desc: The sense of alarm is replaced with sexual rush as she strips you bare and warmth and moisture is felt on your torso.
+Exit: Dark_Lake 9
+Number: 15
+Name:  Dark Lake Store
+Desc: You walk into the sturdily built wooden structure and see a fat balding human cleaning a jar.
+Desc: He sees you and shrugs, and goes back to cleaning. Cabolds great and small eagerly search through his wears ignoring you.
+Desc: The sense of danger eases but not all together as this is still a cabold village.
+Desc: Doing anything rash is ill-advised.
+Exit: Dark_Lake 9
+Number: 16
+Name: Ruins of Temple
+Desc: Despite the obvious ruins from afar upclose the stone seems very much intact. The doors have long decayed and
+Desc: wild grass grows through the stone flooring, but much of the wall is still there with no roof. The architecture
+Desc: comes from the time giants and man lived in peace as the entrances and windows are big enough for several wagons
+Desc: There is an entrance to an old basement, and To the South lies Iron Quarry and its King Doscele, a dwarven hero.
+Exit: South 18
+Exit: East 11
+Exit: Down 17
+Number: 17
+Name: Temple Basement
+Desc: The stench of animals can be smelled, presumably form large cats. Despite the collapsed entrace, these area
+Desc: seemed more like a gathering place, as a now empty pool is barely seen in the middle. With a closer inspection,
+Desc: you see the remains of the lions with half-eaten skulls.....your gaurd goes up. Sometimes its better to go unnoticed.
+Desc: A mountain of dirt is also noticed. Would be a normal site in a ruin, if not for the half digested skulls.
+Exit: Up 16
+Number: 18
+Room: The Old Quarry
+Desc: The realm of the dwarves. Dwarves were reported to be short and thick. Well the thick part is right.
+Desc: Bearded men towering 6ft or higher with long beards and haughty attitudes laugh and drink as you go unnoticed.
+Desc: A dwarf in fine cloth towering 7ft with a great grey beard is beard nods at your arrival. Kings of dwarves are
+Desc: usually less withdrawn from their people but twice as strong. The shops bustle with renown vigor.
+Exit: North 16
+Exit: Closed_Dwarven_Hall 22
+Exit: Tavern 19
+Exit: Shop 20
+Exit: Royal_Alcove 21
+Number: 19
+Room: Dwarven Tavern
+Desc: The famous drinking hall of the dwarves!! The beer smell is sweet and the discussions are loud.
+Desc: The tables are filled with not just older dwarves buy younger too. Despite being young, these
+Desc: 6ft adolescents hold their own pretty well.
+Desc: There are both fish and chips and roasted lamb on the tables.
 Exit: South 6
 Exit: North 8
-Room: The Catacombs
-Number: 8
-Desc: The entrance seemed to be locked from your side, suggesting the dwarves used it
-Desc: as a barrier. Mountains of bodies are here, but all decayed with thousands of years
-Desc: of decadence. Claw marks, molten stone, and charred remains point to an ancient battle.
-Desc: As the surface entrance has immovable boulders blocking, you realize you have made a mistake.
-Exit: South 7
-Exit: East 1
+Number: 20
+Room: Dwarven General Shop
+Desc: Potions, lotions,oils, and artifacts line the giant window as the shopkeeper greats you with a loud "Yoooiiiddd!"
+Desc: These items are big but can still fit in your bag. Ewww! Its a pickled serpent tongue.
+Desc: The shopkeeper after greeting you goes back to her craft with some huge dom contraption.
+Desc: Its smells like magical vinegar in here.
+Exit: South 6
+Exit: North 8
+Number: 21
+Room: Dwarven Royal Alcove
+Desc: This is where dwarven royals live? Massive wooden doors with mithril hinges and golden handles, copper colored
+Desc: golden pots, deer being finely prepared in the pit, the 11 string lute a meter in length being played by a pretty
+Desc: black haired dwarfet, herself being 6ft tall or greater. It smells of lilac and spiced wine. True splendour.
+Desc: A man with an ordinate helmet sits in a gilded crafted chair sitting in contemplation.
+Exit: South 6
+Exit: North 8
+Number: 22
+Name: Closed Dwarven Hall
+Desc: The smell of mold and decadence looms in the air. Dwarf remains of both mighty and renown
+Desc: lay on the ground. Some of them half-eaten. The armor on the skeletons is sturdy and heavy.
+Desc: The famous mithril battle-axes of the dwarves have weird blood on them, but still sharp.
+Desc: Dwarves are fearless in battle, and their armor impenetrable, yet they tasted defeat?
+Exit: The_Old_Quarry 18
+Exit: Ancient_Gate 23
+Number: 23
+Name: Under The Castle
+Desc: As the dwarven gate swings open, you walk back to the area where you and Isaiah played for years.
+Desc: Your father spoke of the splendour of the old days and how your ancestor guarded the treasure room of the Gods.
+Desc: Is this not the basement of your great ancestor King Neal? Your sense of amazement quickly
+Desc: turned to horror as inhabitants long thought extinct stand before you with unsettled hatred.
+Exit: Up 1
+Exit: Down_The_Stairs 24
+Number: 24
+Room: Ancient Bastion
+Desc: An ominous feeling overwhelms you as you realize why your home was monster free for so long.
+Desc: Humans seem to be the only ones ignorant of greater dark auras. This bastion is old but
+Desc: still strong with inhabitants that still yet live...or rather have not perished.
+Desc: Its fields shows scars of a great fight and its victors let the bones remain...now they see you...
+

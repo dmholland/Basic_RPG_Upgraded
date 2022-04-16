@@ -1,2 +1,4 @@
-package NPC;public class Old_Dragon {
+package NPC;
+
+public class Old_Dragon {
 }

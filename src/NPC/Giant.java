@@ -1,2 +1,4 @@
-package NPC;public class Giant {
+package NPC;
+
+public class Giant extends NPC{
 }

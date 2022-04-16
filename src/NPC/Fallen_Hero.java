@@ -1,2 +1,4 @@
-package NPC;public class Fallen_Hero {
+package NPC;
+
+public class Fallen_Hero extends NPC{
 }

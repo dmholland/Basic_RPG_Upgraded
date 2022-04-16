@@ -1,2 +1,4 @@
-package NPC;public class Lich {
+package NPC;
+
+public class Lich extends NPC{
 }

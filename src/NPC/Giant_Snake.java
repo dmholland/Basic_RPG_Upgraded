@@ -1,2 +1,4 @@
-package NPC;public class Giant_Snake {
+package NPC;
+
+public class Giant_Snake extends NPC{
 }

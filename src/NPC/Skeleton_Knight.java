@@ -1,2 +1,4 @@
-package NPC;public class Skeleton_Knight {
+package NPC;
+
+public class Skeleton_Knight extends NPC{
 }

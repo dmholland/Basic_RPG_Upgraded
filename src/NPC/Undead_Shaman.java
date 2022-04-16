@@ -1,2 +1,4 @@
-package NPC;public class Undead_Shaman {
+package NPC;
+
+public class Undead_Shaman extends NPC{
 }

@@ -1,2 +1,4 @@
-package NPC;public class Tiger_Man {
+package NPC;
+
+public class Tiger_Man {
 }
